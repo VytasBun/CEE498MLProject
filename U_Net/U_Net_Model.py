@@ -48,7 +48,7 @@ class UNet(nn.Module):
 
         return torch.sigmoid(self.out(d1))
     
-class PavementDataset(Dataset):
+class PavementDatasetUnet(Dataset):
     def __init__(self, dataset_root, list_txt, transform=None):
         self.dataset_root = dataset_root
         self.transform = transform
